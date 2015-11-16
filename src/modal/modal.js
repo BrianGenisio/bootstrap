@@ -673,7 +673,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.stackedMap'])
               modalOpenedDeferred.reject(reason);
               modalResultDeferred.reject(reason);
             })
-            ["finally"](function() {
+            ['finally'](function() {
               if (promiseChain === samePromise) {
                 promiseChain = null;
               }
